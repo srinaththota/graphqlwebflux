@@ -1,0 +1,17 @@
+
+
+type Mutation{
+addUser(input:UserName):User
+}
+type Query{
+sayHello:String
+getUsers:[User]
+}
+type User{
+id: ID!
+name:String!
+}
+
+input UserName{
+name:String!
+}
